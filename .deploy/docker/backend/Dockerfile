@@ -19,4 +19,4 @@ COPY .deploy/docker/backend/entrypoint.sh /entrypoint-component.sh
 
 EXPOSE 9000
 
-CMD ["/entrypoint-component.sh"]
+CMD ["/entrypoint-component.sh"]	

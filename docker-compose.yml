@@ -4,7 +4,7 @@ version: '3.2'
 
 services:
   frontend:
-    container_name: shag-0201-frontend
+    container_name: 0203-frontend
     build:
       context: .
       dockerfile: .deploy/docker/frontend/Dockerfile
@@ -14,10 +14,10 @@ services:
     depends_on:
       - backend
     ports:
-      - 8088:80
+      - 8081:80
 
   backend:
-    container_name: shag-0201-backend
+    container_name: 0203-backend
     build:
       context: .
       dockerfile: .deploy/docker/backend/Dockerfile
